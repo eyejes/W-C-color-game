@@ -1,0 +1,131 @@
+
+.warmcolor{
+
+	width:500px;
+	height: 600px;
+	margin-top: 20px;
+	margin-right: 10px;
+	float: left;
+}
+
+.flip-container {
+	perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 100px;
+	height: 100px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	/*transform-style: preserve-3d;*/
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+.one{
+	background-color: #00FFFF;
+	width:100px;
+	height:100px;
+}
+
+.two{
+	background-color: #7FFFD4;
+	width:100px;
+	height:100px;
+}
+
+.three{
+
+	background-color: #000080;
+	width:100px;
+	height:100px;
+}
+
+.four{
+	background-color: #007FFF;
+	width:100px;
+	height:100px;
+	
+}
+
+.five{
+	background-color: #008080;
+	width:100px;
+	height:100px;	
+}
+
+.six{
+	background-color: #4b0082;
+	width:100px;
+	height:100px;	
+}
+
+.coolcolor{
+	width:500px;
+	height: 600px;
+	margin-top: 20px;
+	margin-right: 10px;
+	float: left;
+}
+
+.cone{
+	background-color: #800000;
+	width:100px;
+	height:100px;
+}
+
+.ctwo{
+	background-color: #fc0fc0;
+	width:100px;
+	height:100px;
+}
+
+.cthree{
+
+	background-color: #ffd700;
+	width:100px;
+	height:100px;
+}
+
+.cfour{
+	background-color: #cc9900;
+	width:100px;
+	height:100px;
+	
+}
+
+.cfive{
+	background-color: #ff7f50;
+	width:100px;
+	height:100px;	
+}
+
+.csix{
+	background-color: #228b22;
+	width:100px;
+	height:100px;	
+}
+
+

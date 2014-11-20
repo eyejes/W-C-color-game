@@ -1,0 +1,77 @@
+<!DOCTYPE html> color level 1
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Color Study</title>
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+  <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet'>
+
+<div class="game">
+  <div class="instructions">
+    <span>Choose the...</span>
+    <span class="temperature"></span>
+</div>
+  <div id="timer">
+    <form>
+        <span><input type="button" value="Start count!" onclick="setTimeout(function(){alert('Time over')},11000);doTimer()" />  
+        <br><input type="text" id="txt" /></span>
+    </form>
+    </div>
+  <div class="board">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+  <span class="feedback"></span>
+</div>
+
+<a href="level2.html">
+  <div class="linktonext">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next</div>
+</a>
+
+  <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+
+  <script src="js/index.js"></script>
+
+<!-- <form>
+<span><input type="button" value="Start count!" onclick="setTimeout(function(){alert('Time over')},11000);doTimer()" />  
+<input type="text" id="txt" /></span>
+</form> -->
+
+<script>
+var c = 0;
+var t;
+var timer_is_on = 0;
+
+function timedCount() {
+    document.getElementById('txt').value = c;
+    c = c+1;
+    t = setTimeout(function(){timedCount()}, 1000);
+}
+
+function doTimer() {
+    if (!timer_is_on) {
+        timer_is_on = 1;
+        timedCount();
+    }
+}
+
+function stopCount() {
+    clearTimeout(t);
+    timer_is_on = 0;
+}
+</script>
+
+  
+
+</body>
+
+</html>

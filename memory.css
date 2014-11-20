@@ -1,0 +1,12 @@
+/*.blk {
+	width:70px;
+	height:70px;
+	overflow:hidden;
+}
+                    */
+
+.blk {
+	width:140px;
+	height:140px;
+	overflow:hidden;
+}
